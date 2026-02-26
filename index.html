@@ -44,6 +44,15 @@ body{
     animation:fade 1.5s ease;
 }
 
+.section img{
+    display:block;
+    margin:20px auto;
+    width:100%;
+    max-width:200px;
+    height:auto;
+    border-radius:15px;
+}
+
 .active{
     display:block;
 }
@@ -74,17 +83,17 @@ button:hover{
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
-    gap:15px;
-    margin-top:30px;
+    gap:10px;
+    margin-top:20px;
 }
 
 .galeria img{
-    width:150px;
-    height:200px;
+    width:100%;
+    max-width:130px;   /* tamaño máximo en laptop */
+    height:auto;
     object-fit:cover;
     border-radius:15px;
     box-shadow:0 5px 15px rgba(0,0,0,0.3);
-    transition:0.4s;
 }
 
 .galeria img:hover{
@@ -105,6 +114,48 @@ video{
     padding:20px;
     border-radius:15px;
 }
+    
+h1{
+    font-size:32px;
+}
+
+h2{
+    font-size:24px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+@media (max-width:768px){
+
+    h1{
+        font-size:26px;
+    }
+
+    h2{
+        font-size:20px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    .galeria img{
+        max-width:110px;
+    }
+
+    .section img{
+        max-width:160px;
+    }
+
+    button{
+        font-size:14px;
+        padding:10px 20px;
+    }
+}
+
 </style>
 </head>
 
@@ -233,4 +284,5 @@ actualizarContador();
 </body>
 
 </html>
+
 
