@@ -81,13 +81,15 @@ button:hover{
 /* Galería */
 .galeria{
     display:grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 en celular */
+    grid-template-columns: repeat(2, 1fr); /* 2 por fila */
     gap:15px;
-    max-width:700px;
-    margin:30px auto;
+    max-width:400px;   /* ancho total controlado */
+    margin:40px auto;  /* esto lo centra */
+    justify-items:center; /* centra cada imagen */
 }
 .galeria img{
     width:100%;
+    max-width:180px;
     height:200px;
     object-fit:cover;
     border-radius:15px;
@@ -128,15 +130,15 @@ p{
 @media (max-width:768px){
 
     h1{
-        font-size:35px;
+        font-size:60px;
     }
 
     h2{
-        font-size:30px;
+        font-size:50px;
     }
 
     p{
-        font-size:25px;
+        font-size:40px;
     }
 
     .galeria img{
@@ -148,7 +150,7 @@ p{
     }
 
     button{
-        font-size:14px;
+        font-size:35px;
         padding:10px 20px;
     }
 }
@@ -287,6 +289,7 @@ actualizarContador();
 </body>
 
 </html>
+
 
 
 
