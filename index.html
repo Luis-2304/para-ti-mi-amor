@@ -80,22 +80,19 @@ button:hover{
 
 /* Galería */
 .galeria{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:10px;
-    margin-top:20px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 en celular */
+    gap:15px;
+    max-width:700px;
+    margin:30px auto;
 }
-
 .galeria img{
     width:100%;
-    max-width:130px;   /* tamaño máximo en laptop */
-    height:auto;
+    height:200px;
     object-fit:cover;
     border-radius:15px;
     box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
-
 .galeria img:hover{
     transform:scale(1.05);
 }
@@ -155,7 +152,11 @@ p{
         padding:10px 20px;
     }
 }
-
+@media (min-width:900px){
+    .galeria{
+        grid-template-columns: repeat(3, 1fr); /* 3 en laptop */
+    }
+}
 </style>
 </head>
 
@@ -286,6 +287,7 @@ actualizarContador();
 </body>
 
 </html>
+
 
 
 
