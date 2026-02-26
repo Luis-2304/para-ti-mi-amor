@@ -11,7 +11,8 @@ body{
     background: linear-gradient(135deg,#ff758c,#ff7eb3);
     color:white;
     text-align:center;
-    overflow:hidden;
+    overflow-x:hidden;   /* bloquea lateral */
+    overflow-y:auto;     /* permite scroll vertical */
 }
 
 /* Corazones */
@@ -83,9 +84,12 @@ button:hover{
     display:grid;
     grid-template-columns: repeat(2, 1fr); /* 2 por fila */
     gap:15px;
-    max-width:800px;   /* ancho total controlado */
-    margin:50px auto;  /* esto lo centra */
+    max-width:400px;   /* ancho total controlado */
+    margin:40px auto;  /* esto lo centra */
     justify-items:center; /* centra cada imagen */
+    position:relative;
+    top:20px;   /* baja */
+    left:50px;  /* mueve derecha */
 }
 .galeria img{
     width:100%;
@@ -289,6 +293,7 @@ actualizarContador();
 </body>
 
 </html>
+
 
 
 
