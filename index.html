@@ -177,7 +177,7 @@ video{
 <script>
 
 console.log("Script cargado correctamente");
-    
+
 let musica = document.getElementById("musica");
 
 function next(num){
@@ -193,19 +193,18 @@ function next(num){
 /* Corazones animados */
 function crearCorazones(){
     const contenedor = document.getElementById("hearts");
-    setInterval(()=>{
+    setInterval(() => {
         const heart = document.createElement("div");
         heart.classList.add("heart");
-        heart.style.left = Math.random()*100+"%";
-        heart.innerHTML="💖";
-        heart.style.fontSize = (Math.random()*20+10)+"px";
+        heart.style.left = Math.random()*100 + "%";
+        heart.innerHTML = "💖";
+        heart.style.fontSize = (Math.random()*20+10) + "px";
         contenedor.appendChild(heart);
-        setTimeout(()=>{heart.remove();},8000);
-    },500);
+        setTimeout(() => { heart.remove(); }, 8000);
+    }, 500);
 }
 
 /* ===== CONTADOR ===== */
-/* CAMBIA ESTA FECHA */
 const fechaInicio = new Date("2025-10-05T06:18:00");
 
 function actualizarContador(){
@@ -226,13 +225,15 @@ function actualizarContador(){
     Y te seguiré eligiendo en cada momento ❤️😍🙈`;
 }
 
-setInterval(actualizarContador,1000);
+setInterval(actualizarContador, 1000);
 actualizarContador();
+
 </script>
 
 </body>
 
 </html>
+
 
 
 
