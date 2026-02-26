@@ -102,14 +102,21 @@ button:hover{
     transform:scale(1.05);
 }
 
-video{
-    width:100%;
-    max-width:400px;
-    margin:20px auto;
-    display:block;
-    border-radius:15px;
+.videos{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
 }
 
+.videos video{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
 #contador{
     margin-top:40px;
     font-size:80px;
@@ -221,14 +228,16 @@ p{
 
 <h2>Recuerdos que repetiría mil veces 🎥</h2>
 
-<video controls>
-<source src="video/VID-20251030-WA0036.mp4" type="video/mp4">
-</video>
+<div class="videos">
+    <video controls>
+        <source src="video/VID-20251030-WA0036.mp4" type="video/mp4">
+    </video>
 
-<video controls>
-<source src="video/VID-20260101-WA0012.mp4" type="video/mp4">
-</video>
-
+    <video controls>
+        <source src="video/VID-20260101-WA0012.mp4" type="video/mp4">
+    </video>
+</div>
+    
 <div id="contador"></div>
 
 <h2 style="margin-top:40px;">Te amo más de lo que las palabras pueden explicar 💞</h2>
@@ -293,6 +302,7 @@ actualizarContador();
 </body>
 
 </html>
+
 
 
 
