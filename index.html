@@ -82,22 +82,16 @@ button:hover{
 /* Galería */
 .galeria{
     display:grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 por fila */
-    gap:15px;
-    max-width:600px;   /* ancho total controlado */
-    height:300px;
-    margin:60px auto;  /* esto lo centra */
-    justify-items:center; /* centra cada imagen */
-    position:relative;
-    left:80px;  /* mueve derecha */
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+    max-width:900px;
+    margin:60px auto;
 }
 .galeria img{
     width:100%;
-    max-width:400px;
     height:300px;
     object-fit:cover;
     border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 .galeria img:hover{
     transform:scale(1.05);
@@ -219,10 +213,8 @@ p{
 <div class="galeria">
 <img src="img/IMG-20250914-WA0013.jpg">
 <img src="img/IMG-20251123-WA0000.jpg">
-    <p></p>
 <img src="img/IMG-20260101-WA0001.jpg">
 <img src="img/IMG-20260111-WA0004.jpg">
-    <p></p>
 <img src="img/IMG-20260216-WA0006.jpg">
 <img src="img/IMG-20260216-WA0007.jpg">
 </div>
@@ -303,19 +295,3 @@ actualizarContador();
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
